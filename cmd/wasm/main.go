@@ -1,9 +1,9 @@
 package main
 
 import (
-	"bgweb-api/internal/api"
-	"bgweb-api/internal/gnubg"
-	"bgweb-api/internal/openapi"
+	"lazybg/api"
+	"lazybg/gnubg"
+	"lazybg/openapi"
 	"embed"
 	"encoding/json"
 	"fmt"
