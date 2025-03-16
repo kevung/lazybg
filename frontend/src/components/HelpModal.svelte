@@ -164,11 +164,11 @@
             <div class="tab-content" bind:this={contentArea}>
                 {#if activeTab === 'manual'}
                     <h3>Introduction</h3>
-                    <p>blunderDB is a software for creating backgammon position databases. Its main strength is to provide a single place to aggregate positions that a player has encountered (online, in tournaments) and to be able to re-study these positions by filtering them according to various arbitrarily combinable filters. blunderDB can also be used to create catalogs of reference positions.</p>
+                    <p>lazyBG is a software for creating backgammon position databases. Its main strength is to provide a single place to aggregate positions that a player has encountered (online, in tournaments) and to be able to re-study these positions by filtering them according to various arbitrarily combinable filters. lazyBG can also be used to create catalogs of reference positions.</p>
                     <p>Positions are stored in a database represented by a .db file.</p>
                     
                     <h3>Main Interactions</h3>
-                    <p>The main interactions possible with blunderDB are:</p>
+                    <p>The main interactions possible with lazyBG are:</p>
                     <ul>
                         <li>adding a new position,</li>
                         <li>modifying an existing position,</li>
@@ -184,10 +184,10 @@
                         <li>editing a query to filter positions (COMMAND mode or search window).</li>
                     </ul>
                     <p>The user can freely tag positions and annotate them with comments.</p>
-                    <p>The rest of the manual describes the graphical interface and the main modes of blunderDB.</p>
+                    <p>The rest of the manual describes the graphical interface and the main modes of lazyBG.</p>
                     
                     <h3>Description of the GUI</h3>
-                    <p>The blunderDB GUI is structured from top to bottom as follows:</p>
+                    <p>The lazyBG GUI is structured from top to bottom as follows:</p>
                     <ul>
                         <li>[at the top] the menu bar, which gathers all the main operations that can be performed on the database,</li>
                         <li>[in the middle] the main display area, which allows displaying or editing backgammon positions,</li>
@@ -201,7 +201,7 @@
                     <p>Modal windows can be displayed to:</p>
                     <ul>
                         <li>[EDIT mode only] set search filters,</li>
-                        <li>display the blunderDB help.</li>
+                        <li>display the lazyBG help.</li>
                     </ul>
                     <p>The main display area provides the user with:</p>
                     <ul>
@@ -220,7 +220,7 @@
                     <p>In the case of positions resulting from a user search, the number of positions indicated in the status bar corresponds to the number of filtered positions.</p>
                     
                     <h3>NORMAL Mode</h3>
-                    <p>NORMAL mode is the default mode of blunderDB. It is used to:</p>
+                    <p>NORMAL mode is the default mode of lazyBG. It is used to:</p>
                     <ul>
                         <li>scroll through the different positions in the current library,</li>
                         <li>display analysis information associated with a position,</li>
@@ -231,9 +231,9 @@
                     <p>EDIT mode allows editing a position to add it to the database or to define the type of position to search for. EDIT mode is activated by pressing the *TAB* key. The distribution of checkers, the cube, the score, and the turn can be modified using the mouse.</p>
                     
                     <h3>COMMAND Mode</h3>
-                    <p>COMMAND mode allows performing all the functionalities of blunderDB available in the graphical interface: general operations on the database, position navigation, displaying analysis and/or comments, searching for positions according to filters... After getting familiar with the interface, it is recommended to gradually use this mode, which allows powerful and smooth use of blunderDB, especially for position search functionalities.</p>
+                    <p>COMMAND mode allows performing all the functionalities of lazyBG available in the graphical interface: general operations on the database, position navigation, displaying analysis and/or comments, searching for positions according to filters... After getting familiar with the interface, it is recommended to gradually use this mode, which allows powerful and smooth use of lazyBG, especially for position search functionalities.</p>
                     <p>To switch to COMMAND mode from any other mode, press the *SPACE* key. To send a query and exit COMMAND mode, press the *ENTER* key.</p>
-                    <p>blunderDB executes the queries sent by the user provided they are valid and immediately modifies the state of the database if necessary. There are no explicit save actions required by the user.</p>
+                    <p>lazyBG executes the queries sent by the user provided they are valid and immediately modifies the state of the database if necessary. There are no explicit save actions required by the user.</p>
                 {/if}
 
                 {#if activeTab === 'shortcuts'}
@@ -260,7 +260,7 @@
 
                             <tr>
                                 <td>Ctrl + Q</td>
-                                <td>Exit blunderDB</td>
+                                <td>Exit lazyBG</td>
                             </tr>
 
                             <tr>
@@ -503,7 +503,7 @@
                             </tr>
                             <tr>
                                 <td>quit, q</td>
-                                <td>Exit blunderDB</td>
+                                <td>Exit lazyBG</td>
                             </tr>
                             <tr>
                                 <td>meta</td>
@@ -954,14 +954,14 @@
                     <h3>Author</h3>
                     <p><strong>Kévin Unger &lt;blunderdb@proton.me&gt;</strong></p>
                     <p>You can also find me on Heroes under the nickname <strong>postmanpat</strong>.</p>
-                    <p>I developed blunderDB initially for my personal use to detect patterns in my mistakes. But it is very pleasant to have feedback, especially when a lot of hours have been spent on design, coding, debugging... So feel free to write to me to share your feedback.</p>
+                    <p>I developed lazyBG initially for my personal use to detect patterns in my mistakes. But it is very pleasant to have feedback, especially when a lot of hours have been spent on design, coding, debugging... So feel free to write to me to share your feedback.</p>
                     <p>Here are several ways to reach out:</p>
                     <ul>
                         <li>Discuss with me if we meet in a tournament,</li>
                         <li>Send me an email,</li>
                     </ul>
                     <h3>License</h3>
-                    <p>blunderDB is licensed under the MIT License. This means you are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.</p>
+                    <p>lazyBG is licensed under the MIT License. This means you are free to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the software, provided that the original copyright notice and this permission notice are included in all copies or substantial portions of the software.</p>
                     <h3>Acknowledgements</h3>
                     <p>I dedicate this small software to my partner <strong>Anne-Claire</strong> and our dear daughter <strong>Perrine</strong>. I would like to especially thank some friends:</p>
                     <ul>

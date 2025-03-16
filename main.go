@@ -44,7 +44,7 @@ func main() {
 
 	// Create application with options
 	err = wails.Run(&options.App{
-		Title:  "blunderDB",
+		Title:  "lazyBG",
 		Width:  initialWidth,
 		Height: initialHeight,
 		AssetServer: &assetserver.Options{
@@ -61,7 +61,7 @@ func main() {
 			Icon:                icon,
 			WindowIsTranslucent: false,
 			WebviewGpuPolicy:    linux.WebviewGpuPolicyNever,
-			ProgramName:         "blunderDB",
+			ProgramName:         "lazyBG",
 		},
 		Debug: options.Debug{
 			OpenInspectorOnStartup: false,

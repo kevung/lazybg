@@ -439,7 +439,7 @@
                 await SetupDatabase(filePath);
                 setStatusBarMessage('New database created successfully');
                 const filename = getFilenameFromPath(filePath);
-                WindowSetTitle(`blunderDB - ${filename}`);
+                WindowSetTitle(`lazyBG - ${filename}`);
                 console.log(`New database created at ${filePath}`);
                 // Reset the display
                 await loadAllPositions();
@@ -478,13 +478,13 @@
             setStatusBarMessage(`Database version: ${dbVersion}`);
 
             if (getMajorVersion(dbVersion) !== getMajorVersion(modelVersion)) {
-                warningMessage = `Major database version mismatch. The database schema might be incompatible with the current version of blunderDB. Continuing to edit the database is done at your own risk. Backup your file before proceeding any further.\nDatabase version: ${dbVersion}\nExpected version: ${modelVersion}`;
+                warningMessage = `Major database version mismatch. The database schema might be incompatible with the current version of lazyBG. Continuing to edit the database is done at your own risk. Backup your file before proceeding any further.\nDatabase version: ${dbVersion}\nExpected version: ${modelVersion}`;
                 showWarningModalStore.set(true); // Use store to show warning modal
             }
 
             setStatusBarMessage('Database opened successfully');
             const filename = getFilenameFromPath(filePath);
-            WindowSetTitle(`blunderDB - ${filename}`);
+            WindowSetTitle(`lazyBG - ${filename}`);
 
             // Load positions
             await loadAllPositions();
